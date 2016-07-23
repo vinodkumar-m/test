@@ -1,0 +1,19 @@
+<html lang="en">
+
+<body class="container">
+
+  
+    <main>
+        <div class="jumbotron">
+            <h1><%= persons.length %></h1>
+			     
+			<% persons.forEach(function(person) { %>
+        <li><%= person.name %> - <%= person.height %></li>
+    <% }); %>
+          
+        </div>
+    </main>
+
+    
+</body>
+</html>
