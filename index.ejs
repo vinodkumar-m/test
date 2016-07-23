@@ -4,14 +4,20 @@
 
   
     <main>
-        <div class="jumbotron">
-            <h1><%= persons.length %></h1>
-			     
-			<% persons.forEach(function(person) { %>
-        <li><%= person.name %> - <%= person.height %></li>
-    <% }); %>
-          
-        </div>
+        <div >
+			  <table>
+			  	<tr>
+				<th>Name</th>
+				<th>Height</th>
+				</tr>
+				<% persons.forEach(function(person) { %>
+				<tr>
+				<td><%= person.name %></td>
+				<td><%= person.height %></td>
+				</tr>
+				 <% }); %>
+			  </table>   
+	</div>
     </main>
 
     

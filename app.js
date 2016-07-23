@@ -10,7 +10,7 @@ var request=require("request");
   res.send('hello world');
 });*/
 var path = require('path');
-app.set('views', path.join(__dirname));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 var router = express.Router();
@@ -27,7 +27,7 @@ router.get('/character/:name', function(req, res) {
 			  
 			   var result=response.body;				
 				var data=JSON.parse(result);
-                // console.log(data.results.length);
+                 console.log(data.results.length);
 				 
 				 data=data.results;
 				/* var finalData=[];
