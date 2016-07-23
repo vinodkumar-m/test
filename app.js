@@ -27,7 +27,7 @@ router.get('/character/:name', function(req, res) {
 			  
 			   var result=response.body;				
 				var data=JSON.parse(result);
-                 console.log(data.results.length);
+                // console.log(data.results.length);
 				 
 				 data=data.results;
 				/* var finalData=[];
