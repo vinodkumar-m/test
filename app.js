@@ -10,7 +10,7 @@ var request=require("request");
   res.send('hello world');
 });*/
 var path = require('path');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname));
 app.set('view engine', 'ejs');
 
 var router = express.Router();
